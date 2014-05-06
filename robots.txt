@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /declivity/stream/
+Disallow: /music/play/
+Disallow: /mp3/
+Disallow: /photos/

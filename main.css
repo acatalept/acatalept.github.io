@@ -1,0 +1,155 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	text-align: center;
+	overflow: hidden;
+}
+table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid #666666;
+  border-spacing: 0;
+}
+td {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  /* border: 0px solid #880000;
+  background-color: #5C6ECC; */
+}
+div {
+  margin: 0px;
+  padding: 0px;
+  font: 10px tahoma, arial; 
+  color: #999999;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+embed {
+  margin: 0 auto;
+}
+
+#player {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.imgBlock {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+/* anchors */
+a { opacity: .5 }
+
+.top a:link {color: #000; text-decoration: none}
+.top a:visited {color: #000; text-decoration: none}
+/*
+.top a:hover {color: #404040; text-decoration: none}
+.top a:active {color: #404040; text-decoration: none}
+*/
+.top a:hover {color: #0077d2; text-decoration: none}
+.top a:active {color: #0077d2; text-decoration: none}
+
+.bottom a {
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+.bottom a:link {color: #000; text-decoration: none}
+.bottom a:visited {color: #000; text-decoration: none}
+/*
+.bottom a:hover {color: #0088f0; text-decoration: none}
+.bottom a:active {color: #0088f0; text-decoration: none}
+*/
+.bottom a:hover {color: #0077d2; text-decoration: none}
+.bottom a:active {color: #0077d2; text-decoration: none}
+
+
+/* layout elements */
+.tdmiddle {
+  /* border: solid #303030;  */
+  /* border-width: 15px 0px; */
+}
+.tdmovie {
+  width: 640px;
+  height: 280px;
+  /* border-width: 15px; */
+  padding: 15px;
+}
+.top {
+  vertical-align: bottom;
+}
+.bottom {
+  vertical-align: top;
+}
+.divtext {
+  font: 13px trebuchet ms, arial;
+  letter-spacing: 10px; 
+  text-align: center;
+  text-transform: uppercase
+}
+.texttop {
+  padding: 0 0 8px 8px;
+  /* color: #0088F0; #F0E38A; #f0f0f0; */
+}
+.textbottom {
+  padding: 8px 0 0 0;
+  color: #ddd;
+}
+
+
+/* background colors */
+.back-blue{
+  background-color: #fff; /* #0077D2; /* #DBCF7F; #dbdbdb; */
+}
+.back-gray-3{
+  background-color: #303030; 
+}
+.back-gray-4{
+  background-color: #404040;
+}
+.back-gray-8{
+  background-color: #808080;
+}
+
+
+/* text colors */
+.blue{
+  color: #0077D2; /* #DBCF7F; #dbdbdb; */
+}
+.blue-light{
+  color: #ddd;
+}
+.gray-3{
+  color: #303030;
+}
+.gray-4{
+  color: #404040;
+}
+.gray-b{
+  color: #b0b0b0;
+}
+
+
+
+@media (min-width: 961px) {
+  .mobileOnly {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .mobileHide, .noMobile {
+    display: none;
+  }
+  
+  .tdmovie {
+    height: 20px;
+  }
+}
