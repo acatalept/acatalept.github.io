@@ -1,0 +1,6 @@
+#.gitignore file
+
+# changes here must me manually untracked in repo, or it will appear the new rules are being disregarded
+# eg: if a new rule is to ignore "pathto/file.ext", must run command "git rm --cached pathto/file.ext" then "git commit -m 'message'"
+
+nppBackup/
