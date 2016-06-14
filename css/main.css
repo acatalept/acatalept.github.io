@@ -39,8 +39,7 @@ h1 {
 p {
     margin: 0 0 1em;
 }
-code,
-pre {
+pre, :not(pre) > code {
     color: #000;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     font-size: 80%;
