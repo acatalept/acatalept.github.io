@@ -13,14 +13,12 @@ But I've thrown together this simple Windows JScript file, which I can run after
 
 Just drop this file into the same folder as your <code>.reason</code> files are saved, name it <code>reset.js</code> (the <code>.js</code> extension tells Windows it's an executable JScript file), and double-click the file to reset timestamps for all your reason files to each file's corresponding creation timestamp.
 
-<pre class="line-numbers"><code class="language-javascript">var wscript = WScript.CreateObject("WScript.Shell");
+<pre><code class="language-javascript">var wscript = WScript.CreateObject("WScript.Shell");
 var shell = new ActiveXObject("Shell.Application");
 var fso = new ActiveXObject("Scripting.FileSystemObject");
 
-
 // only reset timestamps for these file extensions
 var extensions = [".reason"];
-
 
 // extract file extension from file name for comparison
 function GetFileExtension(filename){
@@ -31,13 +29,11 @@ function GetFileExtension(filename){
     return "";
 }
 
-
 // get current folder (where script file was run from)
 var folder = shell.NameSpace(wscript.CurrentDirectory);
 
 // get files in current folder
 var items = folder.Items();
-
 
 // loop through files, resetting timestamps for matching extensions
 for (var i = 0; i < items.Count; i++){
