@@ -40,18 +40,9 @@ p {
     margin: 0 0 1em;
 }
 code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
-    font-size: 1em;
-}
-code[class*=language-],
-pre[class*=language-] {
+pre {
     color: #000;
-    text-shadow: 0 1px #fff;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    direction: ltr;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -64,16 +55,7 @@ pre[class*=language-] {
     -ms-hyphens: none;
     hyphens: none;
 }
-code[class*=language-],
-pre[class*=language-] {
-    font-size: 80%;
-    max-width: 100%;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: pre-wrap;
-}
-:not(pre)>code[class*=language-],
-pre[class*=language-] {
+:not(pre) > code {
     color: #7A95C5;
     background-color: #EDF4FF;
     border-color: #CFDBF1;
@@ -81,11 +63,6 @@ pre[class*=language-] {
     border-width: 1px;
     padding: 0 3px;
     border-radius: 3px;
-}
-:not(pre) > code[class*=language-] {
-    padding: .1em;
-    border-radius: .3em;
-}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
