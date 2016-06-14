@@ -1,7 +1,7 @@
 body {
     margin: 40px auto;
     padding: 0 80px;
-    max-width: 960px;
+    max-width: 40em;
     font: 400 18px/1.6 "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
