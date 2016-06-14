@@ -1,3 +1,8 @@
+---
+layout: post
+title: Reset file modified date / timestamps to corresponding file creation dates
+---
+
 I rely on file modification timestamps to quickly indicate when I last worked on a file, particularly when working on multiple revisions to a file.  In some cases I even want to go back and open previous revisions of files to get a sense of what has changed since then.
 
 However, after picking up (the otherwise incredible ;) <a href="http://www.propellerheads.se/products/reason/">Propellerheads Reason 6</a>, I noticed a glaring issue with the new <code>.reason</code> file format: any time I open a file, even if I'm careful to make no changes, <a href="https://www.propellerheads.se/forum/showthread.php?t=153426">the file modification date/timestamp is changed to the current time upon closing the file</a>.  This is apparently "by design", something to do with the new plugin system... or copy protection... or something.
