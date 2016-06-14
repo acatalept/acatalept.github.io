@@ -10,6 +10,13 @@ body {
     color: #fff;
     text-shadow: none;
 }
+nav {
+    /* use translate3d to force antialiasing on chrome */
+    transform: rotate(90deg) translate3d(0,0,0);
+    transform-origin: top left;
+    position: absolute;
+    margin-left: 1em;    
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
