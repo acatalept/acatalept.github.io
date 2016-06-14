@@ -1,5 +1,6 @@
 body {
-    margin: 60px auto;
+    margin: 40px auto;
+    padding: 40px;
     max-width: 960px;
     font: 400 18px/1.6 "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
     font-smoothing: antialiased;
@@ -15,7 +16,7 @@ nav {
     transform: rotate(90deg) translate3d(0,0,0);
     transform-origin: top left;
     position: absolute;
-    margin-left: 1em;    
+    margin-left: 10px;    
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
