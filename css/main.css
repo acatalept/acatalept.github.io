@@ -84,11 +84,11 @@ pre, :not(pre) > code {
     border-width: 1px 0 1px 5px;
     border-color: #ddd;
     padding: 10px 15px;    
-}
-:not(pre) > code {
     color: #7A95C5;
     background-color: #EDF4FF;
     border-color: #CFDBF1;
+}
+:not(pre) > code {
     border-right-width: 1px;
     padding: 0 3px;
 footer {
