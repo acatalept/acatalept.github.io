@@ -2,12 +2,11 @@
 ---
 
 $fontSizeBase: 18px;
-$fontSizeContent: 18px;
-$fontFamilyBody: "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
-//$fontFamilyBody: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+$fontSizeContent: 16px; // 16 open sans, 18 sorts mill
+//$fontFamilyBody: "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
+$fontFamilyBody: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
 
 
-/*
 // dark colors
 $colorBackgroundBase: rgb(17,17,17);
 $colorBackgroundNavbar: rgb(23,23,23);
@@ -17,9 +16,8 @@ $colorBorderFooter: transparent;
 $colorBorderBlockquote: transparent;
 $colorTextBase: #666;
 $colorTextFaint: #444;
-*/
 
-
+/*
 // light colors
 $colorBackgroundBase: transparent;
 $colorBackgroundNavbar: transparent;
@@ -29,7 +27,7 @@ $colorBorderFooter: #eee;
 $colorBorderBlockquote: #eee;
 $colorTextBase: #333;
 $colorTextFaint: #bbb;
-
+*/
 
 
 body {
