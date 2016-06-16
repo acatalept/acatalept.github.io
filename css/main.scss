@@ -1,0 +1,223 @@
+---
+---
+
+$fontSizeBase: 18px;
+$fontSizeContent: 18px;
+$fontFamilyBody: "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
+//$fontFamilyBody: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+
+
+/*
+// dark colors
+$colorBackgroundBase: rgb(17,17,17);
+$colorBackgroundNavbar: rgb(23,23,23);
+$colorBorderNavbar: rgb(23,23,23);
+$colorBorderPost: transparent;
+$colorBorderFooter: transparent;
+$colorBorderBlockquote: transparent;
+$colorTextBase: #666;
+$colorTextFaint: #444;
+*/
+
+
+// light colors
+$colorBackgroundBase: transparent;
+$colorBackgroundNavbar: transparent;
+$colorBorderNavbar: #eee;
+$colorBorderPost: #eee;
+$colorBorderFooter: #eee;
+$colorBorderBlockquote: #eee;
+$colorTextBase: #333;
+$colorTextFaint: #bbb;
+
+
+
+body {
+    margin: 25% auto;
+    padding: 0 2em 0 6.5em;
+    max-width: 40em;
+    font: 400 $fontSizeBase $fontFamilyBody;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: $colorBackgroundBase;
+    color: $colorTextBase;
+}
+::selection {
+    background: #57a3e8;
+    color: #fff;
+    text-shadow: none;
+}
+.navback {
+    background-color: $colorBackgroundNavbar;
+    width: 100%;
+    height: 110%;
+    min-height: 40em;
+    position: absolute;
+    right: 100%;
+    margin-right: 2em;
+    margin-top: -3em;
+    border-right: 1px solid $colorBorderNavbar;
+}
+nav {
+    /* use translate3d to force antialiasing on chrome */
+    transform: rotate(90deg) translate3d(0,0,0);
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
+    transform-origin: top left;
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: .5em;
+    z-index: 100;
+}
+nav ul, footer ul {
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    
+    /* prevent wrapping to additional rows in narrow window */
+    white-space: nowrap;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 1em;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+a {
+    color: #0067C7;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    color: #57a3e8;    
+    text-decoration: underline;
+}
+.container {
+    position: relative;
+}
+h1 {
+    font-size: 3em;
+    /* letter-spacing: -.025em; */
+    line-height: 1;
+    margin: -.15em 0 .25em -.1em;
+    font-family: 'Lato';
+    font-weight: 300;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+}
+h2 {
+  margin-top: 2.5em;
+}
+h4 {
+  margin-bottom: .25em;
+}
+p {
+    margin: 0 0 1em;
+}
+.meta {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-size: .8em;
+    margin-bottom: 1.5em;
+    color: $colorTextFaint;
+}
+pre {
+    /* make pre element as wide as its contents */
+    display: inline-block;
+}
+code {
+    font-family: Consolas, Inconsolata, Monaco, 'Andale Mono', monospace !important;
+    font-size: 85%;
+}
+pre, :not(pre) > code {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 0 1px 5px;
+    padding: 10px 15px;    
+    color: #7A95C5;
+    background-color: #EDF4FF;
+    border-color: #CFDBF1;
+    margin: .5em 0 1em;
+    min-width: 200%;
+}
+:not(pre) > code {
+    border-right-width: 1px;
+    padding: 0 3px;
+}
+pre > code {
+    display: inline-block;
+}
+.post {
+    border-bottom: 1px solid $colorBorderPost;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;    
+}
+footer {
+    border-top: 1px solid $colorBorderFooter;
+    font-size: .8em;
+}
+
+.post p {
+  font-size: $fontSizeContent;
+}
+.post img {
+  max-width: 100%;
+}
+
+ul.posts { 
+    padding: 0;
+}
+
+ul.posts li {
+    list-style: none;
+    margin: 1.5em 0;
+}
+blockquote {
+    font-style: italic;
+    border-width: 1px 0;
+    padding: 1em 2em 0;
+    margin: 2em 0;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: $colorBorderBlockquote;
+}
+
+
+@media (max-width: 940px) {
+  body {
+    padding-left: 2em;
+  }
+  nav {
+    position: relative;
+    margin: -.5em 0 2em 0;
+    transform: none;
+    filter: none;
+  }
+  .navback {
+    display: none;
+  }
+  nav ul {
+    line-height: 2em;
+    white-space: normal;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+
+
+
