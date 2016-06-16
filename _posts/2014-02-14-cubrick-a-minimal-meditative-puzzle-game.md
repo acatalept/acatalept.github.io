@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cubrick: a minimal, meditative, 3D puzzle/platformer game"
+title: "Cubrick: a minimal, meditative, 3D puzzle / platformer game"
 ---
 
 [In development for Android, Windows (with Oculus Rift support), Linux, and the web (and eventually Mac OSX / iPhone / iPad when I get my hands on a Mac to compile it)]

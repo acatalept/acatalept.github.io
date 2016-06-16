@@ -166,6 +166,9 @@ blockquote {
     line-height: 2em;
     white-space: normal;
   }
+  h1 {
+    font-size: 2em;
+  }
 }
 
 
