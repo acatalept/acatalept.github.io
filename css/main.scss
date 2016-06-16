@@ -31,7 +31,7 @@ $colorTextFaint: #bbb;
 
 
 body {
-    margin: 25% auto;
+    margin: 25% auto 0; // bottom spacing governed by navback padding
     padding: 0 2em 0 6.5em;
     max-width: 40em;
     font: 400 $fontSizeBase $fontFamilyBody;
@@ -48,7 +48,8 @@ body {
 .navback {
     background-color: $colorBackgroundNavbar;
     width: 100%;
-    height: 110%;
+    height: 100%;
+    padding-bottom: 20em;
     min-height: 40em;
     position: absolute;
     right: 100%;
@@ -167,6 +168,7 @@ pre > code {
 footer {
     border-top: 1px solid $colorBorderFooter;
     font-size: .8em;
+    padding-bottom: 1.5em; // space at bottom of page when navback hidden
 }
 
 .post p {
