@@ -1,6 +1,6 @@
 body {
     margin: 2em auto;
-    padding: 0 4.5em 0 6.5em;
+    padding: 0 2em 0 6.5em;
     max-width: 40em;
     font: 400 18px/1.6 "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
     font-smoothing: antialiased;
@@ -129,6 +129,10 @@ footer {
     font-size: .8em;
 }
 
+.post img {
+  max-width: 100%;
+}
+
 ul.posts { 
     padding: 0;
 }
@@ -143,3 +147,26 @@ blockquote {
     padding-left: 20px;
     margin: 0 0 20px 20px;
 }
+
+
+@media (max-width: 940px) {
+  body {
+    padding-left: 2em;
+  }
+  nav {
+    position: relative;
+    margin: -.5em 0 2em 0;
+    transform: none;
+    filter: none;
+  }
+  .navback {
+    display: none;
+  }
+  nav ul {
+    line-height: 2em;
+    white-space: normal;
+  }
+}
+
+
+
