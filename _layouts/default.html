@@ -24,8 +24,8 @@
   		<li><a href="/music">music</a></li>
   		<li><a href="/contact">contact</a></li>
   		<li><a href="/blog">blog</a></li>
-      <!--<li class="cssToggle" onClick="stylesheetToggle();"></li>-->
-      <li class="cssToggle"></li>
+      <li class="cssToggle" onClick="stylesheetToggle();"></li>
+      <!--<li class="cssToggle"></li>-->
   	</ul>
     <!--<div class="cssToggle"></div>-->
 	</nav>
@@ -40,8 +40,8 @@
 	</footer>
 </body>
 
-<!--<script src="/js/js.cookie.js"></script>-->
-<!--<script>
+<script src="/js/js.cookie.js"></script>
+<script>
 function stylesheetToggle(desired) {
 
   var a = document.getElementById("stylesheetMain");
@@ -59,12 +59,15 @@ function stylesheetToggle(desired) {
   
 }
 
+/*
+// on page load, use stylesheet from previous session
 var stylePrevious = Cookies.get("style");
 
 if (stylePrevious && stylePrevious != "dark"){
   stylesheetToggle(stylePrevious);
 }
+*/
 
-</script>-->
+</script>
 
 </html>
