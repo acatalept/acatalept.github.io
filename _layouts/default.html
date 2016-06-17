@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,700,400italic,700italic|Inconsolata:400,700|Lato:300,400,700,900|Open+Sans:700,400,700italic,400italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link id="stylesheetMain" rel="stylesheet" type="text/css" href="/css/light.css">
 </head>
+
 <body>
 	<nav>
 		<ul>
@@ -29,11 +31,31 @@
 	</footer>
 </body>
 
-<script type="text/javascript">
-function stylesheetToggle() {
+<script src="/js/js.cookie.js"></script>
+<script>
+function stylesheetToggle(desired) {
+
   var a = document.getElementById("stylesheetMain");
-  a.x = 'dark' == a.x ? 'light' : 'dark'; // short if
+  
+  if (desired){
+    a.x = desired;
+  }
+  else {
+    a.x = 'dark' == a.x ? 'light' : 'dark'; // short if
+  }
+  
   a.href = '/css/' + a.x + '.css';
+  
+  Cookies.set("style", a.x);
+  
 }
+
+var stylePrevious = Cookies.get("style");
+
+if (stylePrevious){
+  stylesheetToggle(stylePrevious);
+}
+
 </script>
+
 </html>
