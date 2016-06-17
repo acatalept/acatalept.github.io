@@ -10,29 +10,40 @@ $fontFamilyBody: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
 // dark colors
 $colorBackgroundBase: rgb(17,17,17);
 $colorBackgroundNavbar: rgb(23,23,23);
+$colorBackgroundCode: #222;
+$colorBackgroundBlockquote: #222;
 $colorBorderNavbar: rgb(23,23,23);
 $colorBorderPost: transparent;
 $colorBorderFooter: transparent;
-$colorBorderBlockquote: transparent;
+$colorBorderBlockquote: #333;
+$colorBorderCode: #333;
 $colorTextBase: #666;
 $colorTextFaint: #444;
+$colorTextCode: #666;
+
+
 
 /*
 // light colors
 $colorBackgroundBase: transparent;
 $colorBackgroundNavbar: transparent;
+$colorBackgroundCode: #EDF4FF;
+$colorBackgroundBlockquote: #f8f8f8;
 $colorBorderNavbar: #eee;
 $colorBorderPost: #eee;
 $colorBorderFooter: #eee;
 $colorBorderBlockquote: #eee;
+$colorBorderCode: #CFDBF1;
 $colorTextBase: #333;
 $colorTextFaint: #bbb;
+$colorTextCode: #7A95C5;
 */
+
 
 
 body {
     margin: 25% auto 0; // bottom spacing governed by navback padding
-    padding: 0 2em 0 6.5em;
+    padding: 0 2em 0 6.25em;
     max-width: 40em;
     font: 400 $fontSizeBase $fontFamilyBody;
     font-smoothing: antialiased;
@@ -69,6 +80,7 @@ nav {
 }
 nav ul, footer ul {
     padding: 0;
+    margin: 0;
     list-style: none;
     font-weight: bold;
     
@@ -82,6 +94,10 @@ nav ul li, footer ul li {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+nav a {
+    display: inline-block;
+    line-height: 3em;
+}
 a {
     color: #0067C7;
     -webkit-transition: color .3s;
@@ -91,7 +107,7 @@ a {
 a:focus,
 a:hover {
     color: #57a3e8;    
-    text-decoration: underline;
+    //text-decoration: underline;
 }
 .container {
     position: relative;
@@ -147,9 +163,9 @@ pre, :not(pre) > code {
     border-style: solid;
     border-width: 1px 0 1px 5px;
     padding: 10px 15px;    
-    color: #7A95C5;
-    background-color: #EDF4FF;
-    border-color: #CFDBF1;
+    color: $colorTextCode;
+    background-color: $colorBackgroundCode;
+    border-color: $colorBorderCode;
     margin: .5em 0 1em;
     min-width: 200%;
 }
@@ -161,13 +177,14 @@ pre > code {
     display: inline-block;
 }
 .post {
-    border-bottom: 1px solid $colorBorderPost;
-    padding-bottom: 1.5em;
-    margin-bottom: 1.5em;    
+    //border-bottom: 1px solid $colorBorderPost;
+    //padding-bottom: 1.5em;
+    //margin-bottom: 1.5em;    
 }
 footer {
     border-top: 1px solid $colorBorderFooter;
     font-size: .8em;
+    margin-top: 2.25em;
     padding-bottom: 1.5em; // space at bottom of page when navback hidden
 }
 
@@ -188,17 +205,19 @@ ul.posts li {
 }
 blockquote {
     font-style: italic;
-    border-width: 1px 0;
-    padding: 1em 2em 0;
-    margin: 2em 0;
+    border-width: 1px;
+    padding: 2em 2em 1em;
+    margin: 1em 0;
     border-radius: 3px;
     border-style: solid;
     border-color: $colorBorderBlockquote;
+    background-color: $colorBackgroundBlockquote;
 }
 
 
-@media (max-width: 940px) {
+@media (max-width: 740px) {
   body {
+    margin-top: 15%;
     padding-left: 2em;
   }
   nav {
@@ -206,6 +225,9 @@ blockquote {
     margin: -.5em 0 2em 0;
     transform: none;
     filter: none;
+  }
+  nav a {
+    line-height: 2em;
   }
   .navback {
     display: none;
@@ -216,6 +238,10 @@ blockquote {
   }
   h1 {
     font-size: 2em;
+  }
+  blockquote {
+    position: relative;
+    margin: 1em -2em;
   }
 }
 
