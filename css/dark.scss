@@ -1,0 +1,30 @@
+---
+---
+
+$fontSizeBase: 18px;
+$fontSizeContent: 16px; // 16 open sans, 18 sorts mill
+//$fontFamilyBody: "Sorts Mill Goudy", Georgia, Cambria, "Times New Roman", Times, serif;
+$fontFamilyBody: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+
+
+
+// dark colors
+$colorBackgroundBase: rgb(17,17,17);
+$colorBackgroundNavbar: rgb(23,23,23);
+$colorBackgroundCode: #222;
+$colorBackgroundBlockquote: #222;
+$colorBorderNavbar: rgb(23,23,23);
+$colorBorderPost: transparent;
+$colorBorderFooter: transparent;
+$colorBorderBlockquote: #333;
+$colorBorderCode: #333;
+$colorTextBase: #666;
+$colorTextFaint: #444;
+$colorTextCode: #666;
+$imageCssToggle: "../images/eclipse_icon_dark.png";
+
+
+
+@import "common";
+
+
